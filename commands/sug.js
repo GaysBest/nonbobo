@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 exports.run = (client, message, args) => {
-    let suggestmessage = args.join(" ").slice(22);
+    let suggestmessage = args.join(" ").slice(23);
     let suggestchannel = message.mentions.channels.first();
 
     if (!suggestchannel) {
