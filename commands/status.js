@@ -9,3 +9,4 @@ client.user.setActivity(nameResult, {type: "WATCHING"});
   .setTitle("```fix\nЯ доверяю эту команду только Морозову.```")
   message.channel.send(embed2)
 }
+}
