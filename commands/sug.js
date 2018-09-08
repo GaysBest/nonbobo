@@ -13,9 +13,10 @@ exports.run = (client, message, args) => {
     }
 
     let embed = new Discord.RichEmbed()
-        .addField("**ГОЛОСОВАНИЕ**", `${suggestmessage}`)
+        .addField("**ГОЛОСОВАНИЕ:**", `${suggestmessage}`)
         .setFooter(`Автор: ${message.author.tag}`)
         .setTimestamp()
+        .setColor(0x000000)
     suggestchannel.send({
         embed
     }).then(msg => {
