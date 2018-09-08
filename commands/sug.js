@@ -5,11 +5,11 @@ exports.run = (client, message, args) => {
     let suggestchannel = message.mentions.channels.first();
 
     if (!suggestchannel) {
-        return message.reply("```fix\nНеобходимо указать канал для голосования.```")
+        return message.channel.send("```fix\nНеобходимо указать канал для голосования.```")
     }
 
     if (!suggestmessage) {
-        return message.reply("```fix\nПожалуйста, укажите текст для голосования.```")
+        return message.channel.send("```fix\nПожалуйста, укажите текст для голосования.```")
     }
 
     let embed = new Discord.RichEmbed()
