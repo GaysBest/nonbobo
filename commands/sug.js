@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 
 exports.run = (client, message, args) => {
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("```fix\nИзвините, вы не имеете прав на использование этой команды.```");
+    
     let suggestmessage = args.join(" ").slice(22);
     let suggestchannel = message.mentions.channels.first();
 
