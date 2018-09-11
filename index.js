@@ -12,7 +12,7 @@ client.on('ready', () => {
     client.user.setPresence({
         game: {
             name: 'bg_help',
-            type: 1
+            type: 2
         }
     });
 });
