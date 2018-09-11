@@ -6,9 +6,15 @@ var request = require("superagent");
 var prefix = "bg_"
 //----------------------------------------------
 
-client.on("ready", () => {
-    client.user.setActivity('в будущее БГРУ', { type: 'WATCHING' });
-    console.log("Ya gotov!");
+bot.on('ready', () => {
+    console.log('Ya gotov!')
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'Type !help',
+            type: 'WATCHING'
+        }
+    });
 });
 
 client.on("message", message => {
