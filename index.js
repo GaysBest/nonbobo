@@ -7,14 +7,7 @@ var prefix = "bg_"
 //----------------------------------------------
 
 client.on('ready', () => {
-    console.log('Ya gotov!')
-    client.user.setStatus('available')
-    client.user.setPresence({
-        game: {
-            name: 'Type !help',
-            type: 'WATCHING'
-        }
-    });
+    client.user.setActivity('в будущее БГРУ', { type: 'WATCHING' })
 });
 
 client.on("message", message => {
