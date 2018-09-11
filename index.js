@@ -6,7 +6,7 @@ var request = require("superagent");
 var prefix = "bg_"
 //----------------------------------------------
 
-bot.on('ready', () => {
+client.on('ready', () => {
     console.log('Ya gotov!')
     bot.user.setStatus('available')
     bot.user.setPresence({
