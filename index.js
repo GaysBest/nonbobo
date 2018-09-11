@@ -8,8 +8,8 @@ var prefix = "bg_"
 
 client.on('ready', () => {
     console.log('Ya gotov!')
-    bot.user.setStatus('available')
-    bot.user.setPresence({
+    client.user.setStatus('available')
+    client.user.setPresence({
         game: {
             name: 'Type !help',
             type: 'WATCHING'
