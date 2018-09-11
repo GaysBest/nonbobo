@@ -7,7 +7,7 @@ var prefix = "bg_"
 //----------------------------------------------
 
 client.on("ready", () => {
-    client.user.setPresence({game: {name: "bg_help", type: 0}});
+    client.user.setActivity('в будущее БГРУ', { type: 'WATCHING' });
     console.log("Ya gotov!");
 });
 
