@@ -11,7 +11,7 @@ client.on('ready', () => {
     client.user.setPresence({
         game: {
             name: 'в будущее БГРУ',
-            type: "WATCHING",
+            type: "WATCHING"
         }
     });
 });
