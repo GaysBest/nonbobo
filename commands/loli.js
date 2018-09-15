@@ -10,6 +10,7 @@ module.exports.run = async (client, message, args) => {
     if (!message.channel.nsfw) return message.channel.send(":underage: NSFW Команда. Можно использовать только в NSFW канале.");
 
     let hentaiEmbed = new Discord.RichEmbed()
+        .setTitle('.')
         .setImage(body.url)
         .setColor(0x000000)
 
