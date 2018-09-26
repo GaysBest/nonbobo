@@ -6,7 +6,10 @@ exports.run = (client, message, args) => {
     if (!message.channel.nsfw) return message.channel.send(":underage: NSFW Команда. Можно использовать только в NSFW канале.")
 
     var subreddits = [
-        'yiff'
+        'yiff',
+        'gfur',
+        'GayPokePorn',
+        'YiffyFurries'
     ]
     var sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
 
