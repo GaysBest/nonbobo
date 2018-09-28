@@ -9,7 +9,6 @@ exports.run = (client, message, args) => {
         'gayporn',
         'GayPornCentral',
         'TwinGuys',
-        'CumCannonAddicts',
         'GayNSFWFunny'
     ]
     var sub = subreddits[Math.round(Math.random() * (subreddits.length - 1))];
